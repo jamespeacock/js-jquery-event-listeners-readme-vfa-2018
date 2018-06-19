@@ -26,7 +26,7 @@ function frameIt() {
   });
 }
 
-fuction
+function
 
 $(document).ready(function(){
 
