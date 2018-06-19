@@ -21,8 +21,9 @@ function getIt() {
 
 function frameIt() {
   $('img').on('load', function(){
-    $('img').append()
-  })
+    $('img').addclass('tasty');
+    return;
+  });
 }
 
 $(document).ready(function(){
