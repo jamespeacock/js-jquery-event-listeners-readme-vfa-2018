@@ -1,17 +1,4 @@
 //define functions here
-$('h1').on("eventname", function(){
-    //action you want taken
-});
-
-function submitIt() {
-  $("form").on("submit", function() {
-    if ($( "input:first" ).val() === "correct") {
-      alert('Your form is going to be submitted now.');
-      return;
-    }
-  });
-}
-
 function getIt() {
   $('p').on('click', function(){
     alert('Hey!');
@@ -32,13 +19,23 @@ function pressIt() {
       alert('You pressed the G key!');
       return;
     }
-  })
+  });
 }
+
+function submitIt() {
+  $("form").on("submit", function() {
+    alert('Your form is going to be submitted now.');
+    return;
+  });
+}
+
 
 $(document).ready(function(){
 
 // call functions here
   getIt();
   frameIt();
+  pressIt();
+  submitIt();
 
 });
