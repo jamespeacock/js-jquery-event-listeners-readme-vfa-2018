@@ -19,7 +19,9 @@ function getIt() {
   });
 }
 
-function 
+function frameIt() {
+  
+}
 
 $(document).ready(function(){
 
