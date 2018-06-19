@@ -26,6 +26,8 @@ function frameIt() {
   });
 }
 
+fuction
+
 $(document).ready(function(){
 
 // call functions here
