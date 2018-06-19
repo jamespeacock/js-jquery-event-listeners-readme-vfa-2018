@@ -3,14 +3,16 @@ $('h1').on("eventname", function(){
     //action you want taken
 });
 
-$("form").on("submit", function() {
-  if ($( "input:first" ).val() === "correct") {
-    alert('your form is going to be submitted now');
+function submitIt() {
+  $("form").on("submit", function() {
+    if ($( "input:first" ).val() === "correct") {
+      alert('your form is going to be submitted now');
+      return;
+    }
+    alert("you entered the wrong value");
     return;
-  }
-  alert("you entered the wrong value");
-  return;
-});
+  });
+}
 
 function getIt() {
   $('p').on('click', function(){
@@ -27,7 +29,12 @@ function frameIt() {
 }
 
 function pressIt() {
-  $(;)
+  $("#typing").on('keydown', function(e){
+    if (e.which === 71) {
+      alert('You pressed the G key!');
+      return;
+    }
+  })
 }
 
 $(document).ready(function(){
