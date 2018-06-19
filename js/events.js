@@ -14,8 +14,9 @@ $("form").on("submit", function() {
 
 function getIt() {
   $('p').on('click', function(){
-    
-  })
+    alert('Hey!');
+    return;
+  });
 }
 
 $(document).ready(function(){
